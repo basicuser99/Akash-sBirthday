@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Year So Far</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="confetti"></canvas>
+  <div class="center-content">
+    <h1>✨ Year So Far</h1>
+    <ul id="achievementList"></ul>
+    <a class="button" href="terminal.html">Go to Jupiter Terminal</a>
+  </div>
+  <script src="script.js"></script>
+  <script>
+    const achievements = [
+      "You kept working hard, even when things got tough",
+      "You grew so much in coding & problem-solving.",
+      "You never stopped hoping and striving for the better.",
+      "And you always made time for us, even when busy.",
+      "You switched from Zomato to cooking yourself.",
+      "You started Anki."
+    ];
+    typeWriterList("achievementList", achievements, 50);
+    confettiBackground("confetti");
+  </script>
+</body>
+</html>
